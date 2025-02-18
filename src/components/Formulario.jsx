@@ -10,11 +10,14 @@ const Formulario = ({ setUser }) => {
     const newErrors = {};
 
     if (name === null || name === "") {
-      newErrors.name = 'El nombre es requerido';
+      newErrors.name = 'El nombre esta vacio D:';
+
     }
 
+
+    
     if (email === null || email === "") {
-      newErrors.email = 'El email no es válido';
+      newErrors.email = 'El email no esta vacio D:';
     }
 
     if (password.length <= 6) {
